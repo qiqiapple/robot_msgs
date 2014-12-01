@@ -15,6 +15,14 @@ add_message_files(
 	FILES
 	imagePosition.msg
 	detectedObject.msg
+	IrTransformMsg.msg
+)
+
+add_service_files(
+	FILES
+	MakeTurn.srv
+        FollowWall.srv
+	ResetPWM.srv
 )
 
 generate_messages(
